@@ -4,6 +4,19 @@ A very small command-line based chatting program in Erlang. This was part of an 
 ## Usage
 You will need to download `chat_client.erl`, `color.erl`, and `base.erl`. (You will also need to install Erlang if you do not already have Erlang on your computer, see [https://www.erlang.org/downloads](https://www.erlang.org/downloads).) You will also have to compile all three files in order to run them.
 
+### To start your own server:
+Start a node using the command:
+```
+erl -sname <server_name>
+```
+
+Start the server:
+```
+chat_server:start().
+```
+
+### To join as a client:
+
 Start your own node using the command:
 ```
 erl -sname <name>
